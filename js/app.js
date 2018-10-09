@@ -8,18 +8,18 @@ alert('Welcome, ' + username + '! Let\'s get started!');
 
 //Question One
 
-var answerOne = prompt('Do I have more than one pet?').toLowerCase();
+var answerOne = prompt('Do I have a pet?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
-    // tell them they are incorrect
-    alert('No, I have one beautiful Golden Retriever!  Her name is Eva.');
-    //console.log the result
-    console.log('The user got Question 1 incorrect');
-}   else {
     // tell them they are correct
-    alert('Correct. I have a Golden Retriever named Eva.');
+    alert('Correct, I have one beautiful Golden Retriever!  Her name is Eva.');
     //console.log the result
     console.log('The user got Question 1 correct');
+}   else {
+    // tell them they are incorrect
+    alert('Incorrect. I have a Golden Retriever named Eva.');
+    //console.log the result
+    console.log('The user got Question 1 incorrect');
 }
 
 //Question Two
@@ -37,3 +37,17 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
     console.log('The user got Question 2 incorrect');
 }
 
+//Question Three
+var answerThree = prompt('Have I ever lived in Alaska?').toLowerCase();
+
+if (answerThree === 'yes' || answerThree === 'y') {
+    //tell them they are incorrect
+    alert('Incorrect ' + username +', I have never lived in Alaska.');
+    //console.log the result
+    console.log('The user got Question 3 incorrect');
+}   else {
+    //tell them they were right
+    alert('Correct!  I have never lived there.');
+    //console.log the result
+    console.log('The user got Question 3 correct');
+}
