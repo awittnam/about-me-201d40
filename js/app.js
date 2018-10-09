@@ -57,7 +57,7 @@ var answerFour = prompt('Have I ever been arrested?').toLowerCase();
 
 if (answerFour === 'yes' || answerFour === 'y') {
     //tell them they are wrong
-    alert('NOOOOO ' + username +   ' ,I have never been arrested.');
+    alert('NOOOOO ' + username +   ', I have never been arrested.');
     //console.log the result
     console.log('The user got Question 4 wrong');
 }   else {
@@ -65,4 +65,19 @@ if (answerFour === 'yes' || answerFour === 'y') {
     alert('Correct!  Thank you for having faith in me, I have never been arested.');
     //console.log the result
     console.log('The user got Question 4 correct');
+}
+
+//Question Five 
+var answerFive = prompt('Have I ever had a long, luxurious, intoxicating beard?').toLowerCase();
+
+if (answerFive === 'yes' || answerFive === 'y') {
+    //tell them they couldn't BE more right
+    alert('Obviously you are correct!  And thank you for the compliment.');
+    //console.log the result
+    console.log('The user absolutely got Question 5 correct');
+}   else {
+    //tell them they are totally wrong
+    alert('*sigh* Wrong Wrong Wrong');
+    //console.log the result
+    console.log('The user got Question 5 completely wrong');
 }
