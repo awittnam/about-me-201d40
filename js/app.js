@@ -51,3 +51,18 @@ if (answerThree === 'yes' || answerThree === 'y') {
     //console.log the result
     console.log('The user got Question 3 correct');
 }
+
+//Question Four
+var answerFour = prompt('Have I ever been arrested?').toLowerCase();
+
+if (answerFour === 'yes' || answerFour === 'y') {
+    //tell them they are wrong
+    alert('NOOOOO ' + username +   ' ,I have never been arrested.');
+    //console.log the result
+    console.log('The user got Question 4 wrong');
+}   else {
+    //tell them they are right
+    alert('Correct!  Thank you for having faith in me, I have never been arested.');
+    //console.log the result
+    console.log('The user got Question 4 correct');
+}
