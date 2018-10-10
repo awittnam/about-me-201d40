@@ -2,22 +2,22 @@
 
 alert('Welcome! Let\'s play a simple yes/no guessing game so you can learn a little about me.')
 
-var username = prompt('What is your name?');  //allows me to obtain the name of the person playing to allow for personalization of prompts if needed in the future
+var username = prompt('What is your name?'); //allows me to obtain the name of the person playing to allow for personalization of prompts if needed in the future
 
-alert('Welcome, ' + username + '! Let\'s get started!');  //populates a personalized welcome message
+alert('Welcome, ' + username + '! Let\'s get started!'); //populates a personalized welcome message
 
 //Question One
 
-var answerOne = prompt('Do I have a pet?').toLowerCase();  //populates question and converts answer to all lowercase
+var answerOne = prompt('Do I have a pet?').toLowerCase(); //populates question and converts answer to all lowercase
 
 if (answerOne === 'yes' || answerOne === 'y') { //if the anwer given in yes or y, they are correct
   // tell them they are correct
-  alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.');  //text that populates
+  alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.'); //text that populates
   //console.log the result
   console.log('The user got Question 1 correct'); //logs that user got it correct
-} else {  //if above argument is not met, the following will alert
+} else { //if above argument is not met, the following will alert
   // tell them they are incorrect
-  alert('Incorrect. I have a Golden Retriever named Eva.');  //text that populates
+  alert('Incorrect. I have a Golden Retriever named Eva.'); //text that populates
   //console.log the result
   console.log('The user got Question 1 incorrect');
 }
@@ -80,4 +80,28 @@ if (answerFive === 'yes' || answerFive === 'y') {
   alert('*sigh* Wrong Wrong Wrong');
   //console.log the result
   console.log('The user got Question 5 completely wrong');
+}
+
+//Question Six
+
+//As a developer, I want to add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number (for instance, "What is my favorite number?" or "How many Pokémon did I catch this week?"), and indicates to the user whether the guess is "too high" or "too low", and gives the user exactly four opportunities to get the correct answer, so that my fancy programming skills are showcased.
+
+var favNum = 3 //set mu favorite number for them to guess
+
+for (var i = 0; i < 4; i++) {
+  var guessNum = Number(prompt('What is my favorite number?')); //converts the guessed num into a number
+  console.log(guessNum); //console.log the number guessed
+
+  if (guessNum === favNum) { //if guess is equal to my
+  //tell them they are correct
+    alert('Great job, you got it!');
+    break;
+  } else if (guessNum > favNum) {
+    alert('That guess was too high.');
+  } else if (guessNum < favNum) {
+    alert('That guess is too low.');
+  }
+  if (i === 3) {
+    alert('To many attempts.  My number ' + favNum + '.');
+  }
 }
