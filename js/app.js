@@ -1,6 +1,6 @@
 'use strict';
 
-alert('Welcome! Let\'s play a guessing game so you can learn more about me.')
+alert('Welcome! Let\'s play a simple yes/no guessing game so you can learn a little about me.')
 
 var username = prompt('What is your name?');
 
@@ -12,7 +12,7 @@ var answerOne = prompt('Do I have a pet?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
     // tell them they are correct
-    alert('Correct, I have one beautiful Golden Retriever!  Her name is Eva.');
+    alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.');
     //console.log the result
     console.log('The user got Question 1 correct');
 }   else {
@@ -59,7 +59,7 @@ if (answerFour === 'yes' || answerFour === 'y') {
     //tell them they are wrong
     alert('NOOOOO ' + username +   ', I have never been arrested.');
     //console.log the result
-    console.log('The user got Question 4 wrong');
+    console.log('The user got Question 4 incorrect');
 }   else {
     //tell them they are right
     alert('Correct!  Thank you for having faith in me, I have never been arested.');
