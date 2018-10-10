@@ -2,22 +2,22 @@
 
 alert('Welcome! Let\'s play a simple yes/no guessing game so you can learn a little about me.')
 
-var username = prompt('What is your name?');
+var username = prompt('What is your name?');  //allows me to obtain the name of the person playing to allow for personalization of prompts if needed in the future
 
-alert('Welcome, ' + username + '! Let\'s get started!');
+alert('Welcome, ' + username + '! Let\'s get started!');  //populates a personalized welcome message
 
 //Question One
 
-var answerOne = prompt('Do I have a pet?').toLowerCase();
+var answerOne = prompt('Do I have a pet?').toLowerCase();  //populates question and converts answer to all lowercase
 
-if (answerOne === 'yes' || answerOne === 'y') {
+if (answerOne === 'yes' || answerOne === 'y') { //if the anwer given in yes or y, they are correct
   // tell them they are correct
-  alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.');
+  alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.');  //text that populates
   //console.log the result
-  console.log('The user got Question 1 correct');
-} else {
+  console.log('The user got Question 1 correct'); //logs that user got it correct
+} else {  //if above argument is not met, the following will alert
   // tell them they are incorrect
-  alert('Incorrect. I have a Golden Retriever named Eva.');
+  alert('Incorrect. I have a Golden Retriever named Eva.');  //text that populates
   //console.log the result
   console.log('The user got Question 1 incorrect');
 }
