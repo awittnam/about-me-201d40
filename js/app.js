@@ -60,6 +60,7 @@ function questionThree() {
     console.log('The user got Question 3 correct');
     tallyScore ++;
   }}
+questionThree();
 
 //Question Four
 function questionFour() {
