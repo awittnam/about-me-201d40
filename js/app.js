@@ -115,7 +115,6 @@ for (var i = 0; i < 4; i++) {
 }
 //Question Seven
 //As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array (for instance, "Can you guess a state that I have lived in besides Washington?"), so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
- 
 
 
 alert('Can you guess a state that I have lived in besides Washington?')
