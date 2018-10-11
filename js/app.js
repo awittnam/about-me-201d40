@@ -146,4 +146,4 @@ do {
 
 } while (!stateInArray && attemptsRemaining > 0);
 
-alert('You scored ' + tallyScore + ' out of 7.');
+alert('You scored ' + tallyScore + ' out of 7. Thank you for playing my game ' + username + '.');
