@@ -1,5 +1,7 @@
 'use strict';
 
+var tallyScore = 0
+
 alert('Welcome! Let\'s play a simple yes/no guessing game so you can learn a little about me.')
 
 var username = prompt('What is your name?'); //allows me to obtain the name of the person playing to allow for personalization of prompts if needed in the future
@@ -15,6 +17,7 @@ if (answerOne === 'yes' || answerOne === 'y') { //if the anwer given in yes or y
   alert('Correct, I have one beautiful Golden Retriever.  Her name is Eva.'); //text that populates
   //console.log the result
   console.log('The user got Question 1 correct'); //logs that user got it correct
+  tallyScore ++;
 } else { //if above argument is not met, the following will alert
   // tell them they are incorrect
   alert('Incorrect. I have a Golden Retriever named Eva.'); //text that populates
@@ -30,6 +33,7 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('Good job!  You\'re on a roll!  I have two children.');
   //console.log the result
   console.log('The user got Question 2 correct');
+  tallyScore ++;
 } else {
   //tell the they were wrong
   alert('Nope, you\'re wrong.  But don\'t be to hard on yourself.  I have two children.');
@@ -50,6 +54,7 @@ if (answerThree === 'yes' || answerThree === 'y') {
   alert('Correct!  I have never lived there.');
   //console.log the result
   console.log('The user got Question 3 correct');
+  tallyScore ++;
 }
 
 //Question Four
@@ -65,6 +70,7 @@ if (answerFour === 'yes' || answerFour === 'y') {
   alert('Correct!  Thank you for having faith in me, I have never been arested.');
   //console.log the result
   console.log('The user got Question 4 correct');
+  tallyScore ++;
 }
 
 //Question Five
@@ -75,6 +81,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
   alert('Obviously you are correct!  And thank you for the compliment.');
   //console.log the result
   console.log('The user absolutely got Question 5 correct');
+  tallyScore ++;
 } else {
   //tell them they are totally wrong
   alert('*sigh* Wrong Wrong Wrong');
@@ -95,6 +102,7 @@ for (var i = 0; i < 4; i++) {
   if (guessNum === favNum) { //if guess is equal to my
   //tell them they are correct
     alert('Great job, you got it!');
+    tallyScore ++;
     break;
   } else if (guessNum > favNum) {
     alert('That guess was too high.');
@@ -125,6 +133,7 @@ do {
     if (listOfStates[j].toLowerCase() === guessedState.toLowerCase()) {
       stateInArray = true;
       alert('Nice work! I have lived in ' + listOfStates);
+      tallyScore ++;
       break;
     }
   }
@@ -136,3 +145,5 @@ do {
   }
 
 } while (!stateInArray && attemptsRemaining > 0);
+
+alert('You scored ' + tallyScore + ' out of 7.');
